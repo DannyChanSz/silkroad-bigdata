@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>GLOBAL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=zh-HK,en-us"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/highcharts-3d.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/exporting.js"></script>
+    <link type="text/css" rel="stylesheet" href="../lib/bubbles/css/bubbles.css" />
+    <script type="text/javascript" src="../lib/fromjs/from.js"></script>
+    <script type="text/javascript" src="../lib/bubbles/js/jquery.bubbles.js"></script>
+</head>
+
+<body>
+    <div id="myMap" class="map"></div>
+    <div id="leftSide" class="left-side-bar"></div>
+    <div id="bottomSide" class="bottom-side-bar">
+        <div class="portBottom">
+            <div id="shipDynamic">
+                <ul class="dynamic-head">
+                    <li>
+                        <span class="field-1">船舶名称</span>
+                        <span class="field-2">动态信息</span>
+                        <span class="field-3">口岸名称</span>
+                        <span class="field-4">时间</span>
+                    </li>
+                </ul>
+                <ul class="dynamic-body">
+                    <li>
+                        <span class="field-1">DONG NAN QI SAN HAO</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">HUA TAI JI 699</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">HAI GANG 35</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">SHIBOKEDU8</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">TONGLINGBO1003</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">HAI YANG 27</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">HAI GANG 35</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                    <li>
+                        <span class="field-1">SHIBOKEDU8</span>
+                        <span class="field-2">停靠</span>
+                        <span class="field-3">上海港区</span>
+                        <span class="field-4">2016-05-27 17:40:24</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="shipCount">
+                <ul class="dynamic-head">
+                    <li>
+                        <span class="field-1">口岸名称</span>
+                        <span class="field-2">总数</span>
+                        <span class="field-3">停靠</span>
+                        <span class="field-4">进入</span>
+                        <span class="field-5">驶离</span>
+                    </li>
+                </ul>
+                <ul class="dynamic-body">
+                    <li>
+                        <span class="field-1">上海</span>
+                        <span class="field-2">880</span>
+                        <span class="field-3">834</span>
+                        <span class="field-4">46</span>
+                        <span class="field-5">8</span>
+                    </li>
+                    <li>
+                        <span class="field-1">深圳</span>
+                        <span class="field-2">591</span>
+                        <span class="field-3">544</span>
+                        <span class="field-4">47</span>
+                        <span class="field-5">16</span>
+                    </li>
+                    <li>
+                        <span class="field-1">香港</span>
+                        <span class="field-2">408</span>
+                        <span class="field-3">371</span>
+                        <span class="field-4">37</span>
+                        <span class="field-5">21</span>
+                    </li>
+                    <li>
+                        <span class="field-1">宁波</span>
+                        <span class="field-2">366</span>
+                        <span class="field-3">355</span>
+                        <span class="field-4">11</span>
+                        <span class="field-5">0</span>
+                    </li>
+                    <li>
+                        <span class="field-1">广州</span>
+                        <span class="field-2">248</span>
+                        <span class="field-3">243</span>
+                        <span class="field-4">5</span>
+                        <span class="field-5">6</span>
+                    </li>
+                    <li>
+                        <span class="field-1">厦门</span>
+                        <span class="field-2">143</span>
+                        <span class="field-3">130</span>
+                        <span class="field-4">13</span>
+                        <span class="field-5">4</span>
+                    </li>
+                    <li>
+                        <span class="field-1">南通</span>
+                        <span class="field-2">122</span>
+                        <span class="field-3">96</span>
+                        <span class="field-4">26</span>
+                        <span class="field-5">6</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="globelBottom" style="height:100%">
+            <div id="globel1" style="width: 20%; height: 100%; margin: 0 auto;float:left;"></div>
+            <div id="globel2" style="width: 40%; height: 100%; margin: 0 auto;float:left;"></div>
+            <div id="globel3" style="width: 20%; height: 100%; margin: 0 auto;float:left;"></div>
+            <div id="globel4" style="width: 20%; height: 100%; margin: 0 auto;float:left;"></div>
+        </div>
+    </div>
+    <div class="left-menu">
+        <div class="rounded-wrap" id="left-btn-1">
+            <div class="rounded-content" onclick="javascript:window.location.href='nation.html'">NATION</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-2">
+            <div class="rounded-content" onclick="javascript:window.location.href='map.html'">GLOBAL</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-3">
+            <div class="rounded-content" onclick="javascript:window.location.href='cooperate.html'">产能合作</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-4">
+            <div class="rounded-content" onclick="javascript:window.location.href='ftz.html'">FTZ&SEZ</div>
+        </div>
+    </div>
+    <div class="port-panel" id="port-panel" data-port="上海">
+        <div id="bubbles"></div>
+        <!-- 模版 -->
+        <div class="port-box" id="port-info">
+            <div class="port-top">
+                <i class="port-box-close-btn fa fa-times-circle fa-2x" data-for="port-info"></i>
+            </div>
+            <div class="port-content">
+                <div class="port-info">
+                    <h2 data-field="title"></h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group">
+                                <li class="list-group-item"> <span class="title">港口中文名</span><span data-field="cnName"></span></li>
+                                <li class="list-group-item"> <span class="title">港口英文名</span><span data-field="enName"></span></li>
+                                <li class="list-group-item"> <span class="title">港口代码</span><span data-field="code"></span></li>
+                                <li class="list-group-item"> <span class="title">港口缩写</span><span data-field="abbr"></span></li>
+                                <li class="list-group-item"> <span class="title">所在国家</span><span data-field="nation"></span></li>
+                                <li class="list-group-item"> <span class="title">经纬度</span><span data-field="position"></span></li>
+                                <li class="list-group-item"> <span class="title">时差</span><span data-field="timeZone"></span></li>
+                                <li class="list-group-item"> <span class="title">锚地</span><span data-field="anchorage"></span></li>
+                                <li class="list-group-item"> <span class="title">泊位吃水</span><span data-field="draft"></span></li>
+                                <li class="list-group-item"> <span class="title">海图号</span><span data-field="seaChart"></span></li>
+                                <li class="list-group-item"> <span class="title">港口类型</span><span data-field="type"></span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>港口简介</h3>
+                            <p data-field="brief"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="port-box" id="port-top5">
+            <div class="port-top">
+                <i class="port-box-close-btn fa fa-times-circle fa-2x" data-for="port-top5"></i>
+            </div>
+            <div class="port-content">
+                <div id="chart5">
+                </div>
+            </div>
+        </div>
+        <div class="port-box" id="port-import-export">
+            <div class="port-top">
+                <i class="port-box-close-btn fa fa-times-circle fa-2x" data-for="port-import-export"></i>
+            </div>
+            <div class="port-content">
+                <div id="chart6">
+                </div>
+            </div>
+        </div>
+        <div class="port-box" id="port-teu-import-export">
+            <div class="port-top">
+                <i class="port-box-close-btn fa fa-times-circle fa-2x" data-for="port-teu-import-export"></i>
+            </div>
+            <div class="port-content">
+                <div id="chart7">
+                </div>
+            </div>
+        </div>
+        <div class="port-box" id="port-to-continent">
+            <div class="port-top">
+                <i class="port-box-close-btn fa fa-times-circle fa-2x" data-for="port-to-continent"></i>
+            </div>
+            <div class="port-content">
+                <div id="chart8">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/charts.js"></script>
+<script type="text/javascript" src="../js/port.js"></script>
+<script type="text/javascript" src="../js/map.js"></script>
+
+</html>

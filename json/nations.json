@@ -1,0 +1,17 @@
+{
+    "nations": [
+        { "code": "CN", "x": 32.254635, "y": 109.729780, "cnName": "中国", "enName": "China" },
+        { "code": "US", "x": 39.874653, "y": -100.851874, "cnName": "美国", "enName": "USA" },
+        { "code": "AU", "x": -25.693453, "y": 134.591902, "cnName": "澳大利亚", "enName": "Australia" },
+        { "code": "RU", "x": 61.494089, "y": 92.503092, "cnName": "俄罗斯", "enName": "Russia" },
+        { "code": "GB", "x": 53.384269, "y": -1.629106, "cnName": "英国", "enName": "United Kingdom" },
+        { "code": "FR", "x": 46.881341, "y": 2.077506, "cnName": "法国", "enName": "France" },
+        { "code": "JP", "x": 36.687667, "y": 139.192026, "cnName": "日本", "enName": "Japan" },
+        { "code": "IN", "x": 21.254833, "y": 78.392872, "cnName": "印度", "enName": "India" },
+        { "code": "EG", "x": 26.416487, "y": 29.460500, "cnName": "埃及", "enName": "Egypt" },
+        { "code": "ZA", "x": -29.970992, "y": 24.234492, "cnName": "南非", "enName": "South Africa" },
+        { "code": "BR", "x": -8.832629, "y": -55.602526, "cnName": "巴西", "enName": "Brazil" },
+        { "code": "ET", "x": 8.752500, "y": 39.536503, "cnName": "埃塞俄比亚", "enName": "Ethiopia" },        
+        { "code": "DJ", "x": 11.845908, "y": 42.550631, "cnName": "吉布提", "enName": "Djibouti" }
+    ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <title></title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+      <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+
+      <script type="text/javascript">
+
+         var map;
+const KEY = 'AjDr-JiVSN0Laqaw-j6Jkdml_aaguQNVUKoQfWbFCrdx3_0EmyO-0F5Kd5AvtMlX';
+         function myModuleLoaded()
+         {
+             // When the module is fully loaded, then this function is called.
+             // Now you can initialize a module object and use the module function to 
+             //    draw an arrow pointing to the center of the map. 
+             var arrowModule = new ArrowModule(map);
+             arrowModule.drawRedArrow(map.getCenter());
+         }
+
+         function GetMap()
+         {
+             // Initialize the map
+             var options = {credentials: KEY};
+             map = new Microsoft.Maps.Map(document.getElementById('mapDiv'), options);
+
+             // Register and load the arrow module
+             Microsoft.Maps.registerModule("ArrowModule", "../js/arrowmodule.js");
+             Microsoft.Maps.loadModule("ArrowModule", { callback: myModuleLoaded });
+
+         }
+
+      </script>
+   </head>
+   <body onload="GetMap();">
+      <div id='mapDiv' style="position:relative; width:800px; 
+height:800px;"></div>       
+   </body>
+</html>

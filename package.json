@@ -1,0 +1,23 @@
+{
+  "name": "big-data-front",
+  "version": "1.0.0",
+  "description": "big data front-end",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/dannychansz/big-data-front"
+  },
+  "keywords": [
+    "map"
+  ],
+  "author": "DannyChanSz@live.com",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "big-data-front",
+  "description": "big data front-end",
+  "main": "app.js",
+  "authors": [
+    "DannyChanSz@live.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "map"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "highcharts": "^4.2.5",
+    "requirejs": "^2.2.0",
+    "font-awesome": "^4.6.2",
+    "bootstrap": "^3.3.6"
+  }
+}

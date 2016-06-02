@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>NATION</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=zh-HK,en-us"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/highcharts-3d.js"></script>
+    <script type="text/javascript" src="../lib/highcharts/exporting.js"></script>
+    <link type="text/css" rel="stylesheet" href="../lib/bubbles/css/bubbles.css" />
+    <script type="text/javascript" src="../lib/fromjs/from.js"></script>
+    <script type="text/javascript" src="../lib/bubbles/js/jquery.bubbles.js"></script>
+</head>
+
+<body id="nation">
+    <div id="mapDiv" class="map"></div>
+       <div class="left-menu">
+        <div class="rounded-wrap" id="left-btn-1">
+            <div class="rounded-content" onclick="javascript:window.location.href='nation.html'">NATION</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-2">
+            <div class="rounded-content" onclick="javascript:window.location.href='map.html'">GLOBAL</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-3">
+            <div class="rounded-content" onclick="javascript:window.location.href='cooperate.html'">产能合作</div>
+        </div>
+        <div class="rounded-wrap" id="left-btn-4">
+            <div class="rounded-content" onclick="javascript:window.location.href='ftz.html'">FTZ&SEZ</div>
+        </div>
+    </div>
+    <div class="top-menu" id="top-menu">
+        <div class="rounded-wrap" id="top-btn-1" data-toggle="modal" data-target="#topMenuModal"  data-whatever="国家">
+            <div class="rounded-content">国家</div>
+        </div>
+        <div class="rounded-wrap" id="top-btn-2" data-toggle="modal" data-target="#topMenuModal"  data-whatever="经济">
+            <div class="rounded-content">经济</div>
+        </div>
+        <div class="rounded-wrap" id="top-btn-3" data-toggle="modal" data-target="#topMenuModal"  data-whatever="政治">
+            <div class="rounded-content">政治</div>
+        </div>
+        <div class="rounded-wrap" id="top-btn-4" data-toggle="modal" data-target="#topMenuModal"  data-whatever="地理">
+            <div class="rounded-content">地理</div>
+        </div>
+        <div class="rounded-wrap" id="top-btn-5" data-toggle="modal" data-target="#topMenuModal"  data-whatever="人口">
+            <div class="rounded-content">人口</div>
+        </div>
+        <div class="rounded-wrap" id="top-btn-6" data-toggle="modal" data-target="#topMenuModal"  data-whatever="VIP">
+            <div class="rounded-content">VIP</div>
+        </div>
+    </div>
+    <div id="right-side-bar" class="right-side-bar">
+        <button id="bar-hidden-btn" class="bar-hidden-btn btn btn-primary"> HIDDEN</button>
+        <div id="nation_1" style="width: 100%; height: 30%; margin: 0 auto; margin-bottom: 2%"></div>
+        <div id="nation_2" style="width: 100%; height: 30%; margin: 0 auto;margin-bottom: 2%"></div>
+        <div id="nation_3" style="width: 100%; height: 30%; margin: 0 auto;margin-bottom: 2%"></div>
+    </div>
+    <div id="bottom-right-bar" class="bottom-right-bar">
+        <div id="nation_4" style=" height: 100%; width:100%; margin: 0 auto;float:left;"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="topMenuModal" tabindex="-1" role="dialog" aria-labelledby="topMenuModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="topMenuModalModalLabel">New message</h4>
+                </div>
+                <div class="modal-body">
+                 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/charts.js"></script>
+<script type="text/javascript" src="../js/nation.js"></script>
+
+</html>
